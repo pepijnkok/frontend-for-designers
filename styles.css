@@ -1,0 +1,23 @@
+body {
+  background-color: #06c;
+  margin: 0;
+  font-family: oxanium;
+}
+
+.container {
+  padding: 1rem;
+}
+
+.draggable {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  width: 50%;
+  cursor: move;
+}
+
+.draggable.dragging {
+  opacity: .5;
+}
+
+
