@@ -9,9 +9,9 @@ Ik heb voor opdracht 1 van Frontend for Designers een playlist met muziek gemaak
 Clone de repository in de terminal
 
 ```
-git clone https://github.com/pepijnkok/blok-tech
+git clone https://github.com/pepijnkok/frontend-for-designers
 ```
 
 ## License
 
-[MIT License](https://github.com/pepijnkok/blok-tech/blob/master/LICENSE.md) © [Pepijn Kok](https://github.com/pepijnkok)
+[MIT License](https://github.com/pepijnkok/frontend-for-designers/blob/master/LICENSE.md) © [Pepijn Kok](https://github.com/pepijnkok)
