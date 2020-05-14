@@ -14,4 +14,4 @@ git clone https://github.com/pepijnkok/frontend-for-designers
 
 ## License
 
-[MIT License](https://github.com/pepijnkok/frontend-for-designers/blob/master/LICENSE.md) © [Pepijn Kok](https://github.com/pepijnkok)
+[MIT License](https://github.com/pepijnkok/frontend-for-designers/blob/master/LICENSE) © [Pepijn Kok](https://github.com/pepijnkok)
