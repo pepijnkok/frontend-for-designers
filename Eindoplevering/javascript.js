@@ -2,7 +2,7 @@
 
 // Defineer de kolomnamen.
 var allCardbacks = null;
-var columns = ['name','imgAnimated','description','howToGet'];
+var columns = ['name','imgAnimated','description','howToGet',];
 var xhr = new XMLHttpRequest();
 xhr.withCredentials = true;
 
@@ -22,19 +22,20 @@ xhr.responseType = 'json';
 xhr.send();
 
 xhr.onload = function () {
-
 }
+
 document.getElementById('search').addEventListener("input",function(){
 	let input = this.value;
 	// als er enige input is voert de functie uit.
 
 
-	if(this.value == ""){
+	if (this.value == ""){
 		cards(allCardbacks);
 		// als de input leeg is dan worden alle cardbacks geshowt
+	}
 
-		
-	}else{
+
+	else {
 		var filteredCardbacks = allCardbacks.filter(function(cardback){
 			console.log(cardback['name']);
 			let cardbackName = cardback['name'];
@@ -42,7 +43,6 @@ document.getElementById('search').addEventListener("input",function(){
 			return cardbackName.toLowerCase().includes(input.toLowerCase());
 			//loopt door alle values heen, als de name terug komt in de input is het true is laat hem erin en false wordt hij eruit gefilterd
 		})
-		
 		cards(filteredCardbacks);
 	}
 })

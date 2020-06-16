@@ -1,43 +1,68 @@
-/* || general styles */
 
-html {
-    font-family: 'helvetica neue', helvetica, arial, sans-serif;
-  }
-  
   body {
-    width: 800px;
+    background-color: #E9D4A7;
+    width: 90%;
     margin: 0 auto;
-    background-color: white;
-    
-  }
-  
-  h1, h2 {
-    font-family: 'Ramabhadra', sans-serif;
-  }
-  
-  /* header styles */
-  
-  h1 {
-    font-size: 4rem;
-    text-align: center;
-    color: #f3ce13;
-  }
-  
-  header p {
-    font-size: 1.3rem;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  
-  h2 {
-    font-size: 2.5rem;
-    letter-spacing: -5px;
-    margin-bottom: 10px;
-    color: #f3ce13;
   }
 
-  img{
-      width: 100%;
-      height: auto;
+
+
+  .hearthstonelogo{
+    width: 30%;
+    height: auto;
+     
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
   }
+
+
+
+  #search {
+    width: 50%;
+    height: 3em;
+
+    background: #4A3826;
+    border-color: #FAD149;
+    color: #FAD149;
+    outline: none;
+
+    border-radius: 1em;
+     
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+    background-image: url(img/search.png);
+    background-repeat: no-repeat;
+    background-size: 2em;
+    background-position: right;
+   
+  }
+
+
+
+#search::placeholder {
+  font-family: Belwe;
+  color: #FAD149;;
+
+  opacity: 0.5;
+}
+
+
+
+
+  td{
+    font-family: Belwe;
+    font-size 4em;
+    color: #4A3826;
+  }
+
+
+
+  #cardbackTable {
+width: 100%;
+margin: 0;
+padding: 0;
+  }
+
