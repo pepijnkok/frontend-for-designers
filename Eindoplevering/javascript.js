@@ -1,8 +1,7 @@
-
-
-// Defineer de kolomnamen.
 var allCardbacks = null;
 var columns = ['name','imgAnimated','description','howToGet',];
+// De waardes van de json die je terug wilt laten komen in de tabel
+
 var xhr = new XMLHttpRequest();
 xhr.withCredentials = true;
 
@@ -10,7 +9,8 @@ xhr.addEventListener("readystatechange", function () {
 	if	 (this.readyState === this.DONE) {
 		cards(this.response);
 		allCardbacks = this.response;
-	//	console.log(this.responseText);
+		// Je voegt een event listener toe aan de api call en kijkt of de state aangepast wordt. Zodra de state naar Done gezet wordt dan is de API klaar en kan je de cards functie runnen
+
 	}
 });
 
@@ -22,6 +22,7 @@ xhr.responseType = 'json';
 xhr.send();
 
 xhr.onload = function () {
+	//de functie wordt onload geladen
 }
 
 document.getElementById('search').addEventListener("input",function(){
@@ -37,11 +38,11 @@ document.getElementById('search').addEventListener("input",function(){
 
 	else {
 		var filteredCardbacks = allCardbacks.filter(function(cardback){
-			console.log(cardback['name']);
+			
 			let cardbackName = cardback['name'];
-			console.log(input);
+		
 			return cardbackName.toLowerCase().includes(input.toLowerCase());
-			//loopt door alle values heen, als de name terug komt in de input is het true is laat hem erin en false wordt hij eruit gefilterd
+			//loopt door alle values heen, als de name terug komt in de input is het true en laat hij hem erin. False wordt hij eruit gefilterd.
 		})
 		cards(filteredCardbacks);
 	}
@@ -51,40 +52,42 @@ function cards (cardbacks) {
 	var table = document.getElementById('cardbackTable');
 	table.innerHTML = "";
 	// Maakt een tabel aan voor de data.
-	// Loop door de data heen. Max 10 cardback laten zien.
-
+	
 
 	for(var i = 0; i < 50;i++){
-		// Creer 1 rij in de volgende lege positie.
-
+		// Loop door de data heen. Max 50 cardback laten zien.
+	
 
 		var tr = table.insertRow(-1);
-		// Loop door de kolomnamen heen.
+			// Creer 1 rij in de volgende lege positie.
 
 
 		for(var j = 0;j<columns.length;j++){
-			// Definieer de columnaam
-
+				// Loop door de kolomnamen heen.
+		
 
 			let column = columns[j];
-			// Creer een extra column
-
+				// Definieer de columnaam
+		
 
 			var tabCell = tr.insertCell(-1);
-			// Kijkt of de column een image is.
-
+				// Creer een extra column
+		
 
 			if(column == 'imgAnimated'){
-				// Defineer de innerHTML van de tabelcolumn naar de Image.
+					// Kijkt of de column een imagAnimated is.
 
 
 				tabCell.innerHTML = "<img src='"+ cardbacks[i][column] + "' ></img>";
+					// Defineer de innerHTML van de tabelcolumn naar de Image.
+
+
 			}else if(cardbacks[i][column] == undefined){
 				tabCell.innerHTML = "Default";
+				// Anders laat gewoon de text Default zien.
+
 			}else{
-				// Anders laat gewoon text zien.
-
-
+				
 				tabCell.innerHTML = cardbacks[i][column];
 				//Haalt de values eruit
 
