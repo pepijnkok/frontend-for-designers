@@ -9,6 +9,7 @@ Van deze API heb ik de code snippet van Cardbacks gekopieerd en omgezet in JSON 
 Dit is het eindresultaat geworden:
 https://pepijnkok.github.io/frontend-for-designers/Eindoplevering/
 
+![Screenshot 2020-06-18 at 15 48 24](https://user-images.githubusercontent.com/59015908/85030559-dfae6c80-b17d-11ea-8446-be93fb89c0d7.png)
 
 ## Idee
 Ik heb op mijn pagina alle cardbacks die er in hearthstone bestaan ingeladen met de JSON data. Omdat dit er echt rond de 150 zijn heb ik voor nu de max gezet tot 50. Dit zijn er alsnog erg veel en daarom vond ik het erg handig om de gebruiker de feature te kunnen bedienen met een search balk. Hiermee filter je de cardbacks doordat je de naam van jouw gewenste cardback invult.
