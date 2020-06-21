@@ -35,23 +35,23 @@ Ook als je eroverheen hovert verandert je muis van een pijltje naar een balkje z
 ## Code
 De code wordt uitgelegd door middel van comments bij de stukjes code. Ik maak gebruik van JSON data en ik heb hierbij een zoek functie toegevoegd om specifieke data op te zoeken. 
 
-```
+`
 document.getElementById('search').addEventListener("input",function(){
 	let input = this.value;
     
 	// als er enige input is voert de functie uit.
-```
+`
 
 
-```
+`
 if (this.value == ""){
 		cards(allCardbacks);
 
 		// als de input leeg is dan worden alle cardbacks geshowt
 	}
-```
+`
 
-```
+`
 else {
 		var filteredCardbacks = allCardbacks.filter(function(cardback){
 			let cardbackName = cardback['name'];
@@ -62,7 +62,7 @@ else {
 		cards(filteredCardbacks);
 	}
 })
-```
+`
 
 ## Installeren
 Clone de repository in de terminal
