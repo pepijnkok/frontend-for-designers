@@ -10,7 +10,7 @@ Criteria
 
 Ik heb voor de 2de opdracht gekozen en een website gemaakt waarbij je als je naar beneden scrollt je een afbeelding met tekst ziet verschijnen.
 
-https://pepijnkok.github.io/frontend-for-designers/Opdracht%202/
+Dit is het resultaat geworden: https://pepijnkok.github.io/frontend-for-designers/Opdracht%202/
 
 ## Installeren
 Clone de repository in de terminal
