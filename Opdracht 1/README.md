@@ -36,6 +36,8 @@ eventlistener: animationend
 
 Ik heb voor opdracht 1 van Frontend for Designers een playlist met muziek gemaakt waarvan je zelf de volgorde kan veranderen door middel van drag and drop.
 
+Dit is het resultaat geworden: https://pepijnkok.github.io/frontend-for-designers/Opdracht%201/
+
 ## Installeren
 Clone de repository in de terminal
 
